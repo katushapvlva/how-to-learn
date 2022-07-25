@@ -5,6 +5,7 @@
   max-width: 1600px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
+  padding: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -13,8 +14,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  margin: 0 auto;
-  padding: 0 auto;
+  display: flex;
+  position: relative;
   background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
@@ -35,9 +36,56 @@
 
 .logo {
   position: absolute;
-  height: 32px;
   width: 228px;
-  color: black;
-  margin-top: 30px;
-  margin-left: 64px;
+  height: 32px;
+  z-index: 1;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  margin: 0px 0px 0px 64px;
+  align-self: center;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+.square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
 }
