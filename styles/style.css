@@ -15,9 +15,9 @@
   max-height: 756px;
   margin: 0 auto;
   padding: 0 auto;
-  display: flex;
   position: relative;
   background-color: #f2f2f2;
+  display: flex; 
   /* выше установили ограничения для секции */
 }
 
@@ -45,10 +45,10 @@
 
 .header__subtitle {
   position: absolute;
-  margin: 0 auto;
-  width: 388px;
   left: 64px;
   bottom: 30px;
+  width: 388px;
+  margin: 0 auto;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -87,8 +87,6 @@
 
 .two-columns {
   display: flex;
-  align-self: center;
-  justify-content: space-between;
   width: 80%;
 }
 
@@ -132,8 +130,6 @@
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-title {
@@ -199,15 +195,15 @@
   margin: 0 auto;
   padding: 0 auto;
   height: 890px;
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
   background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-position: left bottom;
 }
 
 .feynman__title {
