@@ -81,6 +81,7 @@
 .description {
   margin-top: 100px;
   margin-bottom: 0;
+  padding: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -128,6 +129,7 @@
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -233,4 +235,51 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+}
+
+.kaufman {
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.section-title_theme_dark {
+  
+}
+
+.section-subtitle_theme_dark {
+
+}
+
+.table_theme_dark {
+  padding-top: 0px;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  padding-top: 80px;
+  padding-bottom: 0px;
+  width: 200px;
+}
+
+.table__heading_theme_dark {
+
+}
+
+.table__text_theme_dark {
+
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  width: 877px;
+  height: 877px;
 }
