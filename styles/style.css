@@ -14,33 +14,32 @@
   min-height: 600px;
   max-height: 756px;
   margin: 0 auto;
-  padding: 0 auto;
   position: relative;
   background-color: #f2f2f2;
-  display: flex; 
-  /* выше установили ограничения для секции */
+  display: flex;
 }
 
 .logo {
-  position: absolute;
   width: 228px;
   height: 32px;
   z-index: 1;
 }
 
 .logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   margin: 0px 0px 0px 64px;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -52,7 +51,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__link {
@@ -66,6 +65,7 @@
   bottom: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
   z-index: 1;
 }
 
@@ -81,19 +81,18 @@
 .description {
   margin-top: 100px;
   margin-bottom: 0;
-  padding: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .two-columns {
   display: flex;
+  justify-content: space-between;
   width: 80%;
 }
 
 .two-columns__brief {
   margin: 0 auto;
-  padding: 0 auto;
   color: #2f80ed;
   width: 175px;
   line-height: 1.2;
@@ -103,7 +102,6 @@
 
 .two-columns__main-text {
   margin: 0 auto;
-  padding: 0 auto;
   width: 80%;
   min-width: 784px;
 }
@@ -129,7 +127,6 @@
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
-  padding: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -161,6 +158,7 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -195,8 +193,7 @@
 
 .feynman {
   margin: 0 auto;
-  padding: 0 auto;
-  height: 890px;
+  min-height: 890px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -250,16 +247,16 @@
 }
 
 .section-title_theme_dark {
-  
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
-
+  z-index: 2;
 }
 
 .table_theme_dark {
   padding-top: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -277,17 +274,18 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   top: 0px;
   right: -210px;
   width: 877px;
   height: 877px;
+  z-index: 1;
 }
 
 .footer {
   min-height: 350px;
   margin: 0 auto;
-  padding: 0 auto;
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
@@ -297,7 +295,6 @@
 .footer__columns {
   margin-top: 60px;
   margin-bottom: 40px;
-  padding: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
