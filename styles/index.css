@@ -27,3 +27,9 @@
 @import url(../blocks/page/content/digits/table/__cell/table__cell.css);
 @import url(../blocks/page/content/digits/table/__heading/table__heading.css);
 @import url(../blocks/page/content/digits/table/__text/table__text.css);
+
+/* Фейнман */
+@import url(../blocks/page/content/feynman/feynman.css);
+@import url(../blocks/page/content/feynman/__title/feynman__title.css);
+@import url(../blocks/page/content/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/page/content/feynman/__link/feynman__link.css);
