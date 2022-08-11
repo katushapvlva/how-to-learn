@@ -72,6 +72,11 @@
 @import url(../blocks/page/content/table/__text/_theme/table__text_theme_dark.css);
 @import url(../blocks/page/content/kaufman/__triangle/kaufman__triangle.css);
 
+/* resources */
+@import url(../blocks/page/content/resources/resources.css);
+@import url(../blocks/page/content/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/page/content/resources/__link/resources__link.css);
+
 /* footer */
 @import url(../blocks/page/footer/footer.css);
 @import url(../blocks/page/logo/_place/logo_place_header.css);
