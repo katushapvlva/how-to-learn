@@ -13,11 +13,11 @@
 
 /* description */
 @import url(../blocks/page/content/description/description.css);
-@import url(../blocks/page/content/description/two-columns/two-columns.css);
-@import url(../blocks/page/content/description/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/page/content/description/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/page/content/description/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/page/content/description/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/page/content/two-columns/two-columns.css);
+@import url(../blocks/page/content/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/page/content/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/page/content/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/page/content/two-columns/__span-accent/two-columns__span-accent.css);
 
 /* techniques */
 @import url(../blocks/page/content/techniques/techniques.css);
