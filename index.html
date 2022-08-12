@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel = "stylesheet" href = "./styles/normalize.css">
-  <link rel = "stylesheet" href = "./styles/index.css">
+  <link rel = "stylesheet" href = "./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
 
     <header class="header">
-      <img class = "logo logo_place_header" src = "./images/logo_place_header.svg" alt = "картинка логотипа">
+      <img class = "logo logo_place_header" src = "./images/logo_place_header.svg" alt = "логотип Яндекс.Практикум">
       <h1 class = "header__title">Научиться учиться</h1>
       <p class = "header__subtitle">Какие современные и эффективные подходы к обучению 
-        вы можете использовать в своей жизни? <a class = "header__link" href = "#">Узнать &rarr;</a>
+        вы можете использовать в своей жизни? <a class = "header__link" href = "#" target = "_blank">Узнать &rarr;</a>
       </p>
-      <img class = "header__main-illustration" src = "./images/two_again.png" alt = "картинка с мальчиком">
+      <img class = "header__main-illustration" src = "./images/two_again.png" alt = "грустный мальчик с собакой">
       <div class = "header__square-pic rotation"></div>
     </header>
 
@@ -51,32 +50,32 @@
         <p class = "section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class = "cards">
           <li class = "cards__item">
-            <img class = "cards__image" src = "images_sprint-2/cards-attention.png" alt = "картинка">
+            <img class = "cards__image" src = "images_sprint-2/cards-attention.png" alt = "белая книга в руках">
             <h3 class = "cards__title">Два вида внимания</h3>
             <p class = "cards__description">Глубокие знания возникают, 
               если чередовать сфокусированное и рассеянное мышление.</p>
           </li>
           <li class = "cards__item">
-            <img class = "cards__image" src = "images_sprint-2/cards-recall.png" alt = "картинка">
+            <img class = "cards__image" src = "images_sprint-2/cards-recall.png" alt = "скульптура мальчика">
             <h3 class = "cards__title">Recall</h3>
             <p class = "cards__description">Вспоминайте изученное — 
               это позволит соединить разрозненные порции памяти.
             </p>
           </li>
           <li class = "cards__item">
-            <img class = "cards__image" src = "images_sprint-2/cards-interliving.png" alt = "картинка">
+            <img class = "cards__image" src = "images_sprint-2/cards-interliving.png" alt = "черно-белая абстракция">
             <h3 class = "cards__title">Интерливинг</h3>
             <p class = "cards__description">Изучайте несколько навыков одновременно, 
               они обогащают друг друга.</p>
           </li>
           <li class = "cards__item">
-            <img class = "cards__image" src = "images_sprint-2/cards-question.png" alt = "картинка">
+            <img class = "cards__image" src = "images_sprint-2/cards-question.png" alt = "вид сверху на белое здание">
             <h3 class = "cards__title">Вопросы</h3>
             <p class = "cards__description">Слушая преподавателя, придумывайте хороший вопрос, 
               который вас действительно волнует.</p>
           </li>
           <li class = "cards__item">
-            <img class = "cards__image" src = "images_sprint-2/cards-competence.png" alt = "картинка">
+            <img class = "cards__image" src = "images_sprint-2/cards-competence.png" alt = "стопка книг в руке">
             <h3 class = "cards__title">Иллюзия компетентности</h3>
             <p class = "cards__description">Повторите про себя, запишите, 
               расскажите другу: вам только кажется, что вы владеете новой темой.</p>
@@ -87,12 +86,16 @@
       <section class = "video">
         <h2 class = "section-title">Видео нa TED</h2>
         <p class = "section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class = "video__iframes">
-          <iframe class = "video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" 
-          allowfullscreen></iframe>
-          <iframe class = "video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" 
-          allowfullscreen></iframe>
-        </div>
+        <ul class = "video__iframes">
+          <li>
+            <iframe class = "video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" 
+            allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe class = "video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" 
+            allowfullscreen></iframe>
+          </li>
+        </ul>
       </section>
 
       <section class = "oakley">
@@ -113,11 +116,11 @@
       <section class="feynman">
         <h2 class = "feynman__title">Метод Фейнмана</h2>
         <p class = "feynman__subtitle">Выучить и не забыть.</p>
-        <a class = "feynman__link" href = "#">Подробнее &rarr;</a>
+        <a class = "feynman__link" href = "#" target = "_blank">Подробнее &rarr;</a>
       </section>
 
       <section class="digits">
-        <h2 class="section-title section-title_theme_light">Цифры и факты</h2>
+        <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
           <li class="table__cell">
@@ -162,16 +165,16 @@
         <div class = "khan__container">
           <p class = "khan__author">Салман Хан</p>
           <h2 class = "khan__title">Весь мир — школа</h2>
-          <p class = "khan__quote">
+          <blockquote class = "khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. 
             Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — 
             так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, 
-            карьере и жизни.</p>
+            карьере и жизни.</blockquote>
           <p class = "khan__quote-author">Джордж Лукас</p>
           <p class = "khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class = "khan__book-container">
-            <img class = "khan__book-pic" src = "./images_sprint-2/khan-book.jpg" alt = "картинка книги">
-            <a class = "khan__buy-link" href = "#">Купить книгу &rarr;</a>
+            <img class = "khan__book-pic" src = "./images_sprint-2/khan-book.jpg" alt = "книга весь мир - школа">
+            <a class = "khan__buy-link" href = "#" target = "_blank">Купить книгу &rarr;</a>
           </div>
         </div>
       </section>
@@ -228,24 +231,32 @@
       <section class = "resources">
         <h2 class = "section-title">Полезные ресурсы</h2>
         <p class = "section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class = "resources__logo-zone">
-          <a class = "resources__link" href = "#">
-            <img class = "resources__logo" src = "./images_sprint-2/logo/resources-arzamas.svg" 
-            alt = "картинка логотипа">
-          </a>
-          <a class = "resources__link" href = "#">
-            <img class = "resources__logo" src = "./images_sprint-2/logo/resources-n1.svg" 
-            alt = "картинка логотипа">
-          </a>
-          <a class = "resources__link" href = "#">
-            <img class = "resources__logo" src = "./images_sprint-2/logo/resources-strelka.svg" 
-            alt = "картинка логотипа">
-          </a>
-          <a class = "resources__link" href = "#">
-            <img class = "resources__logo" src = "./images_sprint-2/logo/resources-polka.svg" 
-            alt = "картинка логотипа">
-          </a>
-        </div>
+        <ul class = "resources__logo-zone">
+          <li>
+            <a class = "resources__link" href = "#"  target = "_blank">
+              <img class = "resources__logo" src = "./images_sprint-2/logo/resources-arzamas.svg" 
+              alt = "логотип арзамас">
+            </a>
+          </li>
+          <li>
+            <a class = "resources__link" href = "#" target = "_blank">
+              <img class = "resources__logo" src = "./images_sprint-2/logo/resources-n1.svg" 
+              alt = "логотип n+1">
+            </a>
+          </li>
+          <li>
+            <a class = "resources__link" href = "#" target = "_blank">
+              <img class = "resources__logo" src = "./images_sprint-2/logo/resources-strelka.svg" 
+              alt = "логотип стрелка">
+            </a>
+          </li>
+          <li>
+            <a class = "resources__link" href = "#" target = "_blank">
+              <img class = "resources__logo" src = "./images_sprint-2/logo/resources-polka.svg" 
+              alt = "логотип полка">
+            </a>
+          </li>
+        </ul>
       </section>
 
     </main>
@@ -254,34 +265,40 @@
       <div class = "footer__columns">
         <div class = "footer__column footer__column_content_copyright">
           <img class = "logo logo_place_footer" src = "./images/logo_place_footer.svg" 
-          alt = "картинка логотипа">
+          alt = "логотип Яндекс.Практикум">
           <p class = "footer__author">&copy; Катя Павлова</p>
         </div>
         <nav class = "footer__column footer__column_content_info">
-          <h4 class = "footer__column-heading">О Практикуме</h4>
+          <h2 class = "footer__column-heading">О Практикуме</h2>
           <ul class = "footer__column-links">
-            <li class = "footer__column-link">Главная</li>
-            <li class = "footer__column-link">Концепция</li>
-            <li class = "footer__column-link">Наставники</li>
+            <li>
+              <a class = "footer__column-link" href="#" target = "_blank">Главная</a>
+            </li>
+            <li>
+              <a class = "footer__column-link" href="#" target = "_blank">Концепция</a>
+            </li>
+            <li>
+              <a class = "footer__column-link" href="#" target = "_blank">Наставники</a>
+            </li>
           </ul>
         </nav>
         <nav class = "footer__column footer__column_content_social">
-          <h4 class = "footer__column-heading">Соцсети</h4>
+          <h2 class = "footer__column-heading">Соцсети</h2>
           <ul class = "footer__column-links">
             <li>
-              <a class = "footer__column-link" href="#">
+              <a class = "footer__column-link" href="#" target = "_blank">
                 <img class = "footer__social-icon" src = "./images/facebook_color_white.svg" 
                 alt = "иконка Facebook">Facebook
               </a>
             </li>
             <li>
-              <a class = "footer__column-link" href="#">
+              <a class = "footer__column-link" href="#" target = "_blank">
                 <img class = "footer__social-icon" src = "./images/vk_color_white.svg" 
                 alt = "иконка ВКонтакте">ВКонтакте
               </a>
             </li>
             <li>
-              <a class = "footer__column-link" href="#">
+              <a class = "footer__column-link" href="#" target = "_blank">
                 <img class = "footer__social-icon" src = "images/instagram_color_white.svg" 
                 alt = "иконка Instagram">Instagram
               </a>
